@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+:root {
+    --fonte1: 'Rubik Iso', cursive;
+    --fonte2: 'Amatic SC', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../imgs-c-f/749932.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.telamostrador{
+    height: 200px;
+    width: 23%;
+    position: absolute;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    display: none;
+}
+
+.telamostrador .ultresulttext{
+    display: none;
+    font-family: var(--fonte2);
+    font-size: 27px;
+}
+
+.telamostrador .ultimoresult{
+    display: none;
+}
+
+.telamostrador .ultimoresult{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.telamostrador .corrOuIncorr{
+    background-color: #FF5F53;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    width: 80%;
+    display: none;
+}
+
+.container1{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .ladoA{
+    width: 50%;
+    height: 80%;
+    border-radius: 12px;
+    background-color: #FF5F53;
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container1 .ladoA h1{
+    color: white;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container1 .ladoA p{
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: var(--fonte2);
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container2{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .ladoB{
+    width: 50%;
+    height: 80%;
+    border-radius: 12px;
+    background-color:#00C4E3 ;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container2 .ladoB label{
+    font-family: var(--fonte1);
+    color: white;
+    font-size: 35px;
+}
+
+.container2 .ladoB input{
+    height: 50px;
+    width: 180px;
+    font-size: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 15px; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container2 .ladoB button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: var(--fonte2);
+    font-size: 35px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container2 .ladoB button:hover{
+    background-color: #FF5F53;
+    cursor: pointer;
+}
+
+.classreinicio button{
+    background-color: #333739;
+    width: 125px;
+    height: 50px;
+    position: fixed;
+    bottom: 20%;
+    right: 45.5%;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.classreinicio button:hover{
+    background-color: black;
+}
+
+.classreinicio button i{
+    padding-right: 5px;
+}

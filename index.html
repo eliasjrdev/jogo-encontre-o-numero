@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pb.css">
+
+    <script src="https://kit.fontawesome.com/f2ff4ccba9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="enconum.css">
+
+    <title>jogo encontre o numero</title>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="ladoA">
+            <h1>Encontre o numero</h1>
+            <p class="enunciado">Geramos um número aleatório entre 0 e 100 e você tem 10 chances para advinhá-lo.</p>
+        </div>
+    </div>
+    <div class="telamostrador">
+        <p class="corrOuIncorr"></p>
+        <p class="ultresulttext">ÚLTIMOS PALPITES:</p>
+        <p class="ultimoresult"></p>
+    </div>
+
+    <div class="classreinicio">
+        <button onclick="reiniciar()"><i class="fa-sharp fa-solid fa-rotate-left"></i>Reiniciar</button>
+    </div>
+    
+
+    <div class="container2">
+        <div class="ladoB">
+            <label for="inputpalpite">Digite seu palpite</label>
+            <input type="text" name="number" class="inputpalpite" id="inputpalpite">
+            <button class="butsubmit" type="submit" value="submitarpalpite" onclick="Start()">Enviar</button>
+        </div>
+    </div>
+</body>
+<script src="pesquisabinaria.js"></script>
+
+<script src="enconum.js"></script>
+</html>
