@@ -16,7 +16,7 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: black;
-    background-image: url(../imgs-c-f/749932.webp);
+    background-image: url(imgs/749932\ \(1\).webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,9 +165,9 @@ body{
     background-color: #333739;
     width: 125px;
     height: 50px;
-    position: fixed;
-    bottom: 20%;
-    right: 45.5%;
+    position: absolute;
+    bottom: 20vh;
+    right: 45.5vw;
     color: white;
     font-size: 20px;
     border: none;
@@ -183,4 +183,75 @@ body{
 
 .classreinicio button i{
     padding-right: 5px;
+}
+
+/*Responsividade*/
+
+@media (max-width: 480px){
+    body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container1{
+        width: 97%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1 .ladoA{
+        width: 97%;
+        height: 80%;
+        padding: 10px;
+    }
+
+    .container1 .ladoA h1{
+        font-size: 27px;
+    }
+
+    .container1 .ladoA p{
+        height: 60%;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container2{
+        width: 97%;
+        height: 50vh;
+    }
+
+    .container2 .ladoB{
+        width: 97%;
+    }
+
+    .container2 .ladoB label{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .telamostrador{
+        position: relative;
+        display: flex;
+        width: 95%;
+        background-color: rgba(0, 0, 0, 0.733);
+        color: white;
+    }
+
+    .classreinicio button{
+        left: 30%;
+        top: 81%;
+        height: 30px;
+        font-size: 15px;
+        background-color: green;
+    }
+
+    .classreinicio button i{
+        font-size: 15px;
+    }
 }
